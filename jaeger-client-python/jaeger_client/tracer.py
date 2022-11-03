@@ -227,7 +227,7 @@ class Tracer(opentracing.Tracer):
         logging.basicConfig()
         logger = logging.getLogger('hello')
         #logger.debug('debug message')
-        logger.info('parent_id = ' + str(parent_id) + ';'+ 'trace_id = '+ str(trace_id) + ';'+'span_id = '+str(span_id))
+        logger.info('operation_name= '+operation_name+ ',' +'parent_id= ' + str(parent_id) + ','+ 'trace_id= '+ str(trace_id) + ','+'span_id= '+str(span_id))
         #logger.warn('warn message')
         #logger.error('error message')
         #logger.critical('critical message')
